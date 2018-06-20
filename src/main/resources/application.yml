@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    mysql:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.0.1:3306/test
+      username: root
+      password: root
+    oracle:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      jdbc-url: jdbc:oracle:thin:@192.168.0.1:1521:orcl
+      username: scott
+      password: scott
+
+# Logging configuration
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core: trace
